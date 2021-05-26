@@ -12,9 +12,17 @@ namespace AppCustoViagemSegundo.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaPedagios : ContentPage
     {
+
+        App PropriedadesApp;
+
+
         public ListaPedagios()
         {
             InitializeComponent();
+
+            PropriedadesApp = (App)Application.Current;
+
+            lst_lista_pedagios.ItemsSource = PropriedadesApp.ArrayPedagios;
         }
     }
 }

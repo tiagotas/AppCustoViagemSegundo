@@ -6,6 +6,7 @@ using AppCustoViagemSegundo.View;
 using AppCustoViagemSegundo.Model;
 
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace AppCustoViagemSegundo
 {
@@ -15,9 +16,19 @@ namespace AppCustoViagemSegundo
 
         public App()
         {
+            CultureInfo.CurrentCulture = new CultureInfo("pt-BR");
+
             InitializeComponent();
 
-            MainPage = new NavigationPage(new DadosViagem());
+            MainPage = new NavigationPage(new DadosViagemMelhorada());
+
+
+
+           // CurrentCulture = new CultureInfo("pt-BR");
+
+          //  Current.
+
+            //CultureInfo = new CultureInfo("pt-BR").NumberFormat;
         }
 
         protected override void OnStart()
