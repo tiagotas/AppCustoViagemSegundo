@@ -58,7 +58,7 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Valor:" Style="{StaticResource NomeCampo}" />
-                        <Entry x:Name="txt_preco_pedagio" Keyboard="Numeric" />
+                        <Entry x:Name="txt_preco_pedagio" Keyboard="Numeric" Placeholder="R$ " />
                         <Button Text="Add" Clicked="Button_Add_Clicked" Style="{StaticResource BotoesAcaoInvert}" />
                     </StackLayout>
                 </StackLayout>

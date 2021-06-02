@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 using AppCustoViagemSegundo.View;
 using AppCustoViagemSegundo.Model;
 
+using System.Threading;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -16,19 +17,11 @@ namespace AppCustoViagemSegundo
 
         public App()
         {
-            CultureInfo.CurrentCulture = new CultureInfo("pt-BR");
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
 
             InitializeComponent();
 
             MainPage = new NavigationPage(new DadosViagemMelhorada());
-
-
-
-           // CurrentCulture = new CultureInfo("pt-BR");
-
-          //  Current.
-
-            //CultureInfo = new CultureInfo("pt-BR").NumberFormat;
         }
 
         protected override void OnStart()

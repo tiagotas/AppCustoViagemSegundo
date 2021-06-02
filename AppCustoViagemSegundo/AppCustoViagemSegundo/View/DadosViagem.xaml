@@ -66,7 +66,7 @@
 
                 <Label Grid.Row="8" Grid.Column="0" Text="Valor:" />
                 <StackLayout Grid.Row="8" Grid.Column="1" Orientation="Horizontal">
-                    <Entry x:Name="txt_preco_pedagio" HorizontalOptions="FillAndExpand" Keyboard="Numeric" />
+                    <Entry x:Name="txt_preco_pedagio" HorizontalOptions="FillAndExpand" Keyboard="Chat" Placeholder="R$ " />
                     <Button Text="Add" />
                 </StackLayout>
 
